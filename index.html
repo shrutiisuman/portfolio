@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="port.css">
+    <script src="https://kit.fontawesome.com/e08f536ad8.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"></script>
+    <title>My Portfolio</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contacts</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home section starts     -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello, my name is</div>
+                <div class="text-2">Shruti Suman</div>
+                <div class="text-3">And I'm a <span>Student</span></div>
+                <!-- <a href="">Download CV</a> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About section starts -->
+    <section class="about" id="about">
+        <div class="max-width">
+
+            <div class="about-content">
+                <div class="column left">
+                    <img src="image2.jpeg " alt="">
+                </div>
+                <div class="column right">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>My name is Shruti Suman and I am currently in my pre-final year of my bachelor degree in CSE-Data Science from HIT, Haldia. I am a frontend developer and take pride in my skills as a Graphic Designer. My insatiable appetite for acquiring new skills is insurmountable, and I am always on the lookout for opportunities to expand my knowledge.
+                    </p>
+                    <a href="resume1.pdf" download>Download CV</a>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>                            
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>GD</span><br>Graphic Designing</li>
+                                <li><span>Web Development</span><br>Designing Web Pages</li>
+                                <li><span>App Development</span><br>Building Android apps</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2021-25</span><br>Currently Persuing B.Tech from Haldia Institue of Technology, West Bengal</li>
+                                <li><span>2019-20</span><br>Higher Secondary Examination with 94.4% score</li>
+                                <li><span>2017-18</span><br>High School Examination with 92.4% score.</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sevices section starts -->
+    <section class="services" id="services">
+        <div class="max-width">
+            <h2 class="title">My Services</h2>
+            <div class="serv-content">
+                <div class="card">
+                    <div class="box">
+                        <i class="fa-sharp fa-solid fa-paintbrush"></i>
+                            <div class="text">Web Design</div>
+                            <p>Web design is about creating attractive, user-friendly websites using layout, colors, typography, and graphics to enhance the user experience and engagement.</p>
+                        </i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fa-solid fa-chart-line"></i>
+                            <div class="text">Advertising</div>
+                            <p>Advertising is a marketing strategy that promotes products, services, or ideas to target audiences through various channels, aiming to create awareness, generate interest, and drive action.</p>
+                        </i>
+                    </div>                    
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fa-solid fa-code"></i>                        
+                            <div class="text">Graphic Design</div>
+                            <p>
+                                Graphic design is the art of visually communicating ideas using elements like typography, images, and illustrations to convey messages, evoke emotions, and engage audiences effectively.</p>
+                        </i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio section starts -->
+    <section class="portfolio" id="portfolio">
+        <div class="max-width">
+            <h2 class="title">My Works</h2>
+            <div class="port-content">
+                <div class="work">
+                    <img src="work1.jpg" alt="">
+                    <div class="layer">
+                        <h3>Gym Website</h3>
+                        <p>A website for the gym freaks.</p>
+                        <a href="http://127.0.0.1:5500/project1/proj1.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work2.jpg" alt="">
+                    <div class="layer">
+                        <h3>Food Delivery Website</h3>
+                        <p>A website for the foodies.</p>
+                        <a href="http://127.0.0.1:5500/project2/proj2.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work3.jpg" alt="">
+                    <div class="layer">
+                        <h3>Tindog</h3>
+                        <p>A website that is specific for dog owner buyers and dog lovers.</p>
+                        <a href="http://127.0.0.1:5500/bootstrap/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work4.jpg" alt="">
+                    <div class="layer">
+                        <h3>Yoga Website</h3>
+                        <p>Discover peace, strength, and balance through transformative yoga practice.</p>
+                        <a href="http://127.0.0.1:5500/landingpg/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </section>
+
+    <!-- Contact section starts -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact Me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Get in Touch</div>
+                    <p>Working in a team always makes the work a bit better. So, let's virtually connect through my social media to fabricate and device some splendid projects.</p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fa-solid fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Shruti Suman</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">Haldia, West Bengal</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">shrutisuman0651@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <class class="text">Message Me</class>
+                    <form action="#">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Name" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                            <div class="field">
+                                <input type="text" placeholder="Subject" required>
+                            </div>
+                            <div class="field textarea">
+                                <textarea cols="30" rows="10" placeholder="Describe project.." required></textarea>
+                            </div>
+                            <div class="button">
+                                <button type="submit">Send Message</button>
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section starts -->
+    <footer>
+        <div>
+            <p> &copy Copyright 2023 My Portfolio </p>
+        </div>
+    </footer>
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+</body>
+
+</html>

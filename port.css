@@ -1,0 +1,606 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+/* navbar styling */
+.navbar{
+    position: absolute;
+    /* position: fixed; */
+    padding: 30px 0;
+    width: 100%;
+    /* background: crimson; */
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar .max-width{    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar .logo a span{
+    color: crimson;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: crimson;
+}
+
+/* mmenu btn styling */
+.menu-btn{
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Home section styling */
+.home{
+    display: flex;
+    background: url('image5.jpg') no-repeat center;
+    height: 100vh;
+    color: white;
+    min-height: 500px;
+    background-size: cover;
+    font-family: 'Ubuntu', sans-serif;
+}
+.home .max-width{
+    margin: auto 0 auto 30px;
+    
+}
+.home .home-content .text-1{
+    font-size: 27px;
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+    font-size: 40px;    
+    margin: 5px 0;
+}
+.home .home-content .text-3 span{
+    color: crimson;
+    font-weight: 500;
+}
+/* .home .home-content a{
+    display: inline-block;
+    background: crimson;
+    color: white;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 6px;
+} */
+
+/* About section styling */
+section{
+    padding: 100px 0;
+}
+.about{
+    font-family: 'Poppins', sans-serif;
+}
+.about .about-content .left img{
+    /* height: 400px; */
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+    
+}
+.about .about-content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about .about-content .left{
+    flex-basis: 35%;
+}
+.about .about-content .right{
+    flex-basis: 60%;
+}
+.about .about-content .right .sub-title{
+    font-size: 40px;
+    font-weight: 600;
+}
+.about .about-content .right a{
+    display: inline-block;
+    background: crimson;
+    color: white;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 6px 10px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.about .about-content .right a:hover{
+    color: crimson;
+    background: none;
+}
+
+/* Services section styling */
+.services{
+    font-family: 'Poppins', sans-serif;
+    background: black;
+    color: white;
+}
+.services .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.services .serv-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.services .serv-content .card{    
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.services .serv-content .card:hover{
+    background: crimson;
+}
+.services .serv-content .card:hover i{
+    color: white;
+}
+.services .serv-content .card .box{
+    transition: all 0.3s ease;
+}
+.services .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+.services .serv-content .card i{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+.services .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+/* Portfolio section styling */
+.portfolio{
+    font-family: 'Poppins', sans-serif;
+}
+.portfolio .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.portfolio .port-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;    
+}
+.portfolio .port-content .work{    
+    /* width: calc(25% - 10px);         */
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;        
+}
+.portfolio .port-content img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s ease;
+    /* max-height: 400px; */
+    /* height: 400px; */
+}
+.portfolio .port-content .layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6), crimson);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    transition: height 0.5s ease;
+}
+.portfolio .port-content .layer h3{
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.portfolio .port-content .layer a{
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.portfolio .btn{
+    display: block;
+    margin: 50px auto;    
+    /* padding: 6px 10px;         */
+    width: fit-content;
+    font-weight:500;
+    font-size: 17px;
+    background: crimson;
+    color:white;
+    border: 2px solid crimson;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.portfolio .btn:hover{
+    color: crimson;
+    background: none;
+}
+.portfolio .port-content .work:hover img{
+    transform: scale(1.1);
+}
+.portfolio .port-content .work:hover .layer{
+    height: 100%;
+}
+
+/* Contact section styling */
+.contact{
+    font-family: 'Poppins', sans-serif;
+    background: black;
+    color: white;
+}
+.contact .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.contact .contact-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact .contact-content .column{
+    width: calc(50% - 30px);    
+}
+.contact .contact-content .text{
+    font-size: 25px;
+    font-weight: 900;
+    margin-top: 10px;
+}
+.contact .contact-content .left p{
+    text-align: justify;
+}
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row i{
+    font-size: 25px;
+    color: crimson;
+}
+.contact .contact-content .info .head{
+    font-weight: 700;    
+}
+.contact .contact-content .info .sub-title{
+    font-weight: 100;    
+}
+.contact .right form .fields{
+    display: flex;
+}
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact .right form .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+/* .contact .right input, .contact .right textarea{
+    background: #222;
+} */
+.contact .right form .textarea{
+    height: 80px;
+    width: 100%;
+}
+.contact .right form .name{
+    margin-right: 10px;
+}
+.contact .right form .email{
+    margin-left: 10px;
+}
+.contact .right form .field input, .contact .right form .textarea textarea{
+    height: 100%;
+    width: 100%;    
+    border: 1px solid gray;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+}
+.contact .right form .textarea textarea{
+    padding-top: 10px;
+    resize: none;
+    /* color: red; */
+}
+.contact .right form .button{
+    height: 47px;
+    width: 170px;
+}
+.contact .right form .button button{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border: 2px solid crimson;
+    background: crimson;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+.contact .right form .button button:hover{
+    color: crimson;
+    background: none;
+}
+
+/* Footer section styling */
+footer{
+    /* font-family: 'Poppins', sans-serif; */
+    background: #222;
+    padding: 2px 23px;
+    color: white;
+    text-align: center;
+}
+
+
+.tab-titles{
+    display:flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: crimson;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links:hover{
+    color: crimson;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: crimson;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive media query */
+@media (max-width: 1300px){
+    .home .max-width{
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 1104px){
+    .about .about-content .left img{
+        height: 350px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 991px){
+    .max-width{
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 947px){
+    .max-width{
+        padding: 0 50px;
+    }
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: black;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    .home .home-content .text-2{
+        font-size: 70px;       
+    }
+    .home .home-content .text-3{
+        font-size: 35px; 
+    }
+    /* .home .home-content a{
+        font-size: 23px;
+        padding: 10px 30px;
+    } */
+    .max-width{
+        max-width: 800px;
+    }
+    .about .about-content .column{
+        width: 100%;
+    }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right{
+        flex: 100%;        
+    }
+    .about .about-content .right .sub-title{
+        /* justify-content: center; */
+        /* align-items: center; */
+        text-align: center;
+    }
+    .services .serv-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+    .portfolio .port-content{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(500px, 1fr));
+        grid-gap: 40px;
+        margin-top: 50px;    
+    }
+    .contact .contact-content .column{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+}
+
+@media (max-width: 690px){
+    .max-width{
+        padding: 0 23px;
+    }
+    .home .home-content .text-2{
+        font-size: 60px;       
+    }
+    .home .home-content .text-3{
+        font-size: 32px; 
+    }
+    /* .home .home-content a{
+        font-size: 20px;
+    } */
+    .services .serv-content .card{
+        width: 100%;
+    }
+    .portfolio .port-content{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(1000px, 1fr));
+        grid-gap: 40px;
+        margin-top: 50px;    
+    }
+}
+
+@media (max-width: 500px){  
+    .home .home-content .text-2{
+        font-size: 50px;       
+    }
+    .home .home-content .text-3{
+        font-size: 27px; 
+    }
+}
