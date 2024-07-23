@@ -23,6 +23,17 @@ html{
     width: 100%;
     /* background: crimson; */
     font-family: 'Ubuntu', sans-serif;
+
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100; */
 }
 
 .navbar .max-width{    
@@ -64,7 +75,7 @@ html{
 /* Home section styling */
 .home{
     display: flex;
-    background: url('image5.jpg') no-repeat center;
+    background: url('images/shruti1.jpg') no-repeat center;
     height: 100vh;
     color: white;
     min-height: 500px;
@@ -82,14 +93,39 @@ html{
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
+    /* color: crimson; */
 }
 .home .home-content .text-3{
     font-size: 40px;    
     margin: 5px 0;
 }
-.home .home-content .text-3 span{
+.home .home-content .text-4{
+    font-size: 40px;    
+    margin: 5px 0;
+}
+.home .home-content .text-4 span{
     color: crimson;
     font-weight: 500;
+    /* margin-left: 50px; */
+}
+.home-sci a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid rgb(249, 249, 141);
+    border-radius: 50%;
+    font-size: 20px;
+    color: rgb(249, 249, 141);
+    text-decoration: none;
+    margin: 30px 15px 30px 0px;
+}
+.home-sci a:hover {
+    background: rgb(249, 249, 141);
+    color: black;
+    
 }
 /* .home .home-content a{
     display: inline-block;
@@ -146,6 +182,7 @@ section{
     color: crimson;
     background: none;
 }
+
 
 /* Services section styling */
 .services{
