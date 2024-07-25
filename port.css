@@ -36,6 +36,8 @@ html{
     z-index: 100; */
 }
 
+
+
 .navbar .max-width{    
     display: flex;
     align-items: center;
@@ -535,12 +537,32 @@ footer{
 }
 
 @media (max-width: 947px){
+    .navbar-menu {
+        display: flex;
+        flex-direction: row;
+    }
+    .navbar-menu.active {
+        display: block;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: #222;
+        width: 100%;
+        padding: 20px;
+    }
+    .navbar-menu li {
+        display: block;
+        margin: 15px 0;
+    }
+    
+    
     .max-width{
         padding: 0 50px;
     }
     .menu-btn{
         display: block;
         z-index: 999;
+        /* display: none; */
     }
     .navbar .menu{
         position: fixed;
@@ -597,11 +619,13 @@ footer{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
-    .portfolio .port-content{
+    .portfolio .port-content .work{
         display: grid;
         grid-template-columns: repeat(auto-fit,minmax(500px, 1fr));
         grid-gap: 40px;
-        margin-top: 50px;    
+        margin-top: 50px; 
+        
+
     }
     .contact .contact-content .column{
         width: 100%;
@@ -610,6 +634,9 @@ footer{
 }
 
 @media (max-width: 690px){
+    .home{
+        background: black;
+    }
     .max-width{
         padding: 0 23px;
     }
@@ -625,13 +652,15 @@ footer{
     .services .serv-content .card{
         width: 100%;
     }
-    .portfolio .port-content{
+    .portfolio .port-content .work{
         display: grid;
         grid-template-columns: repeat(auto-fit,minmax(1000px, 1fr));
         grid-gap: 40px;
-        margin-top: 50px;    
+        margin-top: 50px;  
+         
     }
 }
+
 
 @media (max-width: 500px){  
     .home .home-content .text-2{
